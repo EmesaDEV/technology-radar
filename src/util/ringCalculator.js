@@ -1,5 +1,6 @@
 const RingCalculator = function (numberOfRings, maxRadius) {
-  var sequence = [0, 6, 5, 3, 2, 1, 1, 1]
+  // this is where you change the width of the rings
+  var sequence = [0, 6, 5, 3, 2, 2, 1]
 
   var self = {}
 

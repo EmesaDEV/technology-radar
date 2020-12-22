@@ -24,15 +24,11 @@ const ExceptionMessages = require('./exceptionMessages')
 const GoogleAuth = require('./googleAuth')
 
 const plotRadar = function (title, blips, currentRadarName, alternativeRadars) {
-  if (title.endsWith('.csv')) {
-    title = title.substring(0, title.length - 4)
-  }
-  document.title = title
   d3.selectAll('.loading').remove()
 
   var rings = _.map(_.uniqBy(blips, 'ring'), 'ring')
   var ringMap = {}
-  var maxRings = 4
+  var maxRings = 6
 
   _.each(rings, function (ringName, i) {
     if (i === maxRings) {
@@ -40,7 +36,6 @@ const plotRadar = function (title, blips, currentRadarName, alternativeRadars) {
     }
     ringMap[ringName] = new Ring(ringName, i)
   })
-
   var quadrants = {}
   _.each(blips, function (blip) {
     if (!quadrants[blip.quadrant]) {
@@ -64,7 +59,8 @@ const plotRadar = function (title, blips, currentRadarName, alternativeRadars) {
     radar.setCurrentSheet(currentRadarName)
   }
 
-  var size = (window.innerHeight - 133) < 620 ? 620 : window.innerHeight - 133
+  // var radarPort = window.innerHeight - 133
+  var size = 1000
 
   new GraphingRadar(size, radar).init().plot()
 }
@@ -181,12 +177,6 @@ const CSVDocument = function (url) {
   return self
 }
 
-const DomainName = function (url) {
-  var search = /.+:\/\/([^\\/]+)/
-  var match = search.exec(decodeURIComponent(url.replace(/\+/g, ' ')))
-  return match == null ? null : match[1]
-}
-
 const FileName = function (url) {
   var search = /([^\\/]+)$/
   var match = search.exec(decodeURIComponent(url.replace(/\+/g, ' ')))
@@ -202,42 +192,20 @@ const GoogleSheetInput = function () {
   var sheet
 
   self.build = function () {
-    var domainName = DomainName(window.location.search.substring(1))
-    var queryString = window.location.href.match(/sheetId(.*)/)
-    var queryParams = queryString ? QueryParams(queryString[0]) : {}
-
-    if (domainName && queryParams.sheetId.endsWith('csv')) {
-      sheet = CSVDocument(queryParams.sheetId)
-      sheet.init().build()
-    } else if (domainName && domainName.endsWith('google.com') && queryParams.sheetId) {
-      sheet = GoogleSheet(queryParams.sheetId, queryParams.sheetName)
-      console.log(queryParams.sheetName)
-
-      sheet.init().build()
+    var dataUrl = window.dataUrl
+    if (dataUrl.endsWith('csv')) {
+      sheet = CSVDocument(dataUrl)
     } else {
-      var content = d3.select('body')
-        .append('div')
-        .attr('class', 'input-sheet')
-      setDocumentTitle()
-
-      plotLogo(content)
-
-      var bannerText = '<div><h1>Build your own radar</h1><p>Once you\'ve <a href ="https://www.thoughtworks.com/radar/byor">created your Radar</a>, you can use this service' +
-        ' to generate an <br />interactive version of your Technology Radar. Not sure how? <a href ="https://www.thoughtworks.com/radar/how-to-byor">Read this first.</a></p></div>'
-
-      plotBanner(content, bannerText)
-
-      plotForm(content)
-
-      plotFooter(content)
+      sheet = GoogleSheet(dataUrl)
     }
+    sheet.init().build()
   }
 
   return self
 }
 
 function setDocumentTitle () {
-  document.title = 'Build your own Radar'
+  document.title = 'Emesa Technology Radar'
 }
 
 function plotLoading (content) {
@@ -251,7 +219,7 @@ function plotLoading (content) {
 
   plotLogo(content)
 
-  var bannerText = '<h1>Building your radar...</h1><p>Your Technology Radar will be available in just a few seconds</p>'
+  var bannerText = '<h1>Building the Radar...</h1><p>It  will be available in just a few seconds</p>'
   plotBanner(content, bannerText)
   plotFooter(content)
 }
@@ -259,7 +227,7 @@ function plotLoading (content) {
 function plotLogo (content) {
   content.append('div')
     .attr('class', 'input-sheet__logo')
-    .html('<a href="https://www.thoughtworks.com"><img src="/images/tw-logo.png" / ></a>')
+    .html('<a href="https://www.emesa.nl"><img src="/images/logo.png" / ></a>')
 }
 
 function plotFooter (content) {
@@ -269,40 +237,13 @@ function plotFooter (content) {
     .append('div')
     .attr('class', 'footer-content')
     .append('p')
-    .html('Powered by <a href="https://www.thoughtworks.com"> ThoughtWorks</a>. ' +
-      'By using this service you agree to <a href="https://www.thoughtworks.com/radar/tos">ThoughtWorks\' terms of use</a>. ' +
-      'You also agree to our <a href="https://www.thoughtworks.com/privacy-policy">privacy policy</a>, which describes how we will gather, use and protect any personal data contained in your public Google Sheet. ' +
-      'This software is <a href="https://github.com/thoughtworks/build-your-own-radar">open source</a> and available for download and self-hosting.')
+    .html('')
 }
 
 function plotBanner (content, text) {
   content.append('div')
     .attr('class', 'input-sheet__banner')
     .html(text)
-}
-
-function plotForm (content) {
-  content.append('div')
-    .attr('class', 'input-sheet__form')
-    .append('p')
-    .html('<strong>Enter the URL of your <a href="https://www.thoughtworks.com/radar/how-to-byor" target="_blank">Google Sheet or CSV</a> file below…</strong>')
-
-  var form = content.select('.input-sheet__form').append('form')
-    .attr('method', 'get')
-
-  form.append('input')
-    .attr('type', 'text')
-    .attr('name', 'sheetId')
-    .attr('placeholder', 'e.g. https://docs.google.com/spreadsheets/d/<sheetid> or hosted CSV file')
-    .attr('required', '')
-
-  form.append('button')
-    .attr('type', 'submit')
-    .append('a')
-    .attr('class', 'button')
-    .text('Build my radar')
-
-  form.append('p').html("<a href='https://www.thoughtworks.com/radar/how-to-byor'>Need help?</a>")
 }
 
 function plotErrorMessage (exception) {
@@ -315,8 +256,7 @@ function plotErrorMessage (exception) {
 
   plotLogo(content)
 
-  var bannerText = '<div><h1>Build your own radar</h1><p>Once you\'ve <a href ="https://www.thoughtworks.com/radar/byor">created your Radar</a>, you can use this service' +
-    ' to generate an <br />interactive version of your Technology Radar. Not sure how? <a href ="https://www.thoughtworks.com/radar/how-to-byor">Read this first.</a></p></div>'
+  var bannerText = '<div><h1>We are hiring</h1><p>If you want to work with this technologies apply now! Check our availabilities <a href ="https://www.werkenbijemesa.nl/?lang=en&tags%5B%5D=department%2CProduct%20%26%20Technology&">here</a></p></div>'
 
   plotBanner(content, bannerText)
 

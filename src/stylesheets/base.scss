@@ -33,6 +33,7 @@ body {
 
   #radar-plot {
     display: none;
+    margin: 0 auto;
   }
 
   .quadrant-table {
@@ -94,7 +95,7 @@ body {
   }
 
   .blip-item-description {
-    padding: 0 15px;
+    padding: 0 5px;
   }
 
   header {
@@ -160,12 +161,12 @@ body {
 @media screen {
 
   #radar {
-    width: 80%;
+    width: 98%;
     margin: 0 auto;
     position: relative;
 
     svg#radar-plot {
-      margin: 0 auto;
+      // margin: 0 auto;
       transition: all 1s ease;
       position: absolute;
       left: 0;
@@ -178,24 +179,32 @@ body {
       }
 
       path {
-        &.ring-arc-3 {
+        &.ring-arc-5 {
+          stroke: none;
+          fill: $deprecated-color;
+        }
+        &.ring-arc-4 {
           stroke: none;
           fill: $grey-light;
         }
 
-        &.ring-arc-2 {
+        &.ring-arc-3 {
           stroke: none;
           fill: $grey;
         }
 
-        &.ring-arc-1 {
+        &.ring-arc-2 {
           stroke: none;
           fill: $grey-dark;
         }
 
-        &.ring-arc-0 {
+        &.ring-arc-1 {
           stroke: none;
           fill: $grey-darkest;
+        }
+        &.ring-arc-0 {
+          stroke: none;
+          fill: $main-stream-color;
         }
       }
 
@@ -324,13 +333,11 @@ body {
           .blip-item-description {
             max-height: 0;
             overflow: hidden;
-            width: 300px;
+            width: 350px;
 
             p {
               margin: 0;
-              border-top: 1px solid rgb(119, 119, 119);
-              border-bottom: 1px solid rgb(119, 119, 119);
-              padding: 20px;
+              padding:5px 10px;
               color: $grey-text;
               font-weight: 100;
               font-size: 14px;
