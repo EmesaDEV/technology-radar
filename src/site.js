@@ -10,6 +10,7 @@ require('./gtm.js')
  * @type {string}
  */
 window.dataUrl = 'https://raw.githubusercontent.com/raduvoinea/Utils/master/test%20-%20Build%20your%20Technology%20Radar.csv'
+// window.dataUrl = 'https://raw.githubusercontent.com/EmesaDEV/technology-radar/main/data.csv'
 
 const GoogleSheetInput = require('./util/factory')
 GoogleSheetInput().build()

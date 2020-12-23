@@ -1,0 +1,56 @@
+name,ring,quadrant,isNew,description
+Symfony,Mainstream,Techniques,FALSE,<p>TBD</p>
+Symfony 123,Mainstream,Techniques,FALSE,<p>TBD</p>
+Symfony 45,Mainstream,Techniques,FALSE,<p>TBD</p>
+Micro frontends,Adopt,Techniques,FALSE,<p>TBD</p>
+Event Storming 0000,Assess,Techniques,FALSE,<p>TBD</p>
+Infrastructure as code,Adopt,Techniques,FALSE,<p>TBD</p>
+Continuous delivery for machine learning (CD4ML),Adopt,Techniques,FALSE,<p>TBD</p>
+Micro frontends for mobile,Assess,Techniques,FALSE,<p>TBD</p>
+Security policy as code,Assess,Techniques,FALSE,<p>TBD</p>
+"Use ""remote native"" processes and approaches",Assess,Techniques,FALSE,<p>TBD</p>
+Pragmatic remote pairing,Assess,Techniques,FALSE,<p>TBD</p>
+DDD,Adopt,Techniques,FALSE,<p>TBD</p>
+Development Lanes (Strategic/Tech/Fast),Trial,Techniques,FALSE,<p>TBD</p>
+Event Storming Hold1,Hold,Techniques,FALSE,<p>TBD</p>
+Event Storming Hold2,Hold,Techniques,FALSE,<p>TBD</p>
+Event Storming Hold3,Hold,Techniques,FALSE,<p>TBD</p>
+Event Storming 0000,De,Techniques,FALSE,<p>TBD</p>
+ZF 1,De,Techniques,FALSE,<p>TBD</p>
+ZF 1111,De,Techniques,FALSE,<p>TBD</p>
+Argo CD,Assess,Platforms & Infra,FALSE,<p>TBD</p>
+Kafka,Assess,Platforms & Infra,FALSE,<p>TBD</p>
+Minikube,Assess,Platforms & Infra,FALSE,<p>TBD</p>
+Kubernetes,Adopt,Platforms & Infra,FALSE,<p>TBD</p>
+Lenses,Adopt,Platforms & Infra,FALSE,<p>TBD</p>
+Grafana,Adopt,Platforms & Infra,FALSE,<p>TBD</p>
+Zaabbix,Adopt,Platforms & Infra,FALSE,<p>TBD</p>
+DVC,Adopt,Tools,TRUE,<p>TBD</p>
+Jaeger,Adopt,Tools,FALSE,<p>TBD</p>
+k9s,Adopt,Tools,FALSE,<p>TBD</p>
+kind,Adopt,Tools,FALSE,<p>TBD</p>
+MURAL,Adopt,Tools,FALSE,<p>TBD</p>
+Gurobi,Assess,Tools,FALSE,<p>TBD</p>
+Zapier,Assess,Tools,FALSE,<p>TBD</p>
+Terragrunt,Assess,Tools,FALSE,<p>TBD</p>
+Apache Spark,Assess,Tools,FALSE,<p>TBD</p>
+Apache Superset,Assess,Tools,TRUE,<p>TBD</p>
+AsyncAPI,Assess,Tools,TRUE,<p>TBD</p>
+Gloo,Assess,Tools,TRUE,<p>TBD</p>
+Lens,Assess,Tools,TRUE,<p>TBD</p>
+Deequ,Assess,languages-and-frameworks,TRUE,<p>TBD</p>
+Tamer,Assess,languages-and-frameworks,TRUE,<p>TBD</p>
+XState,Assess,languages-and-frameworks,TRUE,<p>TBD</p>
+Enzyme,Assess,languages-and-frameworks,FALSE,<p>TBD</p>
+Symfony,Assess,languages-and-frameworks,FALSE,<p>TBD</p>
+Zend Framework 1,Hold,languages-and-frameworks,FALSE,<p>TBD</p>
+Zend Framework 3 / Laminas,Hold,languages-and-frameworks,FALSE,<p>TBD</p>
+Laravel,Hold,languages-and-frameworks,FALSE,<p>TBD</p>
+Yii,Hold,languages-and-frameworks,FALSE,<p>TBD</p>
+Flask,Adopt,languages-and-frameworks,FALSE,<p>TBD</p>
+Django,Adopt,languages-and-frameworks,FALSE,<p>TBD</p>
+Robot Framework,Adopt,languages-and-frameworks,FALSE,<p>TBD</p>
+Vue.js,Adopt,languages-and-frameworks,FALSE,<p>TBD</p>
+Typescript,Adopt,languages-and-frameworks,FALSE,<p>TBD</p>
+React JS,Adopt,languages-and-frameworks,FALSE,<p>TBD</p>
+Angular,Adopt,languages-and-frameworks,FALSE,<p>TBD</p>
