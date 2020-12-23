@@ -1,56 +1,54 @@
 name,ring,quadrant,isNew,description
-Symfony,Mainstream,Techniques,FALSE,<p>TBD</p>
-Symfony 123,Mainstream,Techniques,FALSE,<p>TBD</p>
-Symfony 45,Mainstream,Techniques,FALSE,<p>TBD</p>
-Micro frontends,Adopt,Techniques,FALSE,<p>TBD</p>
-Event Storming 0000,Assess,Techniques,FALSE,<p>TBD</p>
-Infrastructure as code,Adopt,Techniques,FALSE,<p>TBD</p>
-Continuous delivery for machine learning (CD4ML),Adopt,Techniques,FALSE,<p>TBD</p>
-Micro frontends for mobile,Assess,Techniques,FALSE,<p>TBD</p>
-Security policy as code,Assess,Techniques,FALSE,<p>TBD</p>
-"Use ""remote native"" processes and approaches",Assess,Techniques,FALSE,<p>TBD</p>
-Pragmatic remote pairing,Assess,Techniques,FALSE,<p>TBD</p>
-DDD,Adopt,Techniques,FALSE,<p>TBD</p>
-Development Lanes (Strategic/Tech/Fast),Trial,Techniques,FALSE,<p>TBD</p>
-Event Storming Hold1,Hold,Techniques,FALSE,<p>TBD</p>
-Event Storming Hold2,Hold,Techniques,FALSE,<p>TBD</p>
-Event Storming Hold3,Hold,Techniques,FALSE,<p>TBD</p>
-Event Storming 0000,De,Techniques,FALSE,<p>TBD</p>
-ZF 1,De,Techniques,FALSE,<p>TBD</p>
-ZF 1111,De,Techniques,FALSE,<p>TBD</p>
-Argo CD,Assess,Platforms & Infra,FALSE,<p>TBD</p>
-Kafka,Assess,Platforms & Infra,FALSE,<p>TBD</p>
-Minikube,Assess,Platforms & Infra,FALSE,<p>TBD</p>
-Kubernetes,Adopt,Platforms & Infra,FALSE,<p>TBD</p>
-Lenses,Adopt,Platforms & Infra,FALSE,<p>TBD</p>
-Grafana,Adopt,Platforms & Infra,FALSE,<p>TBD</p>
-Zaabbix,Adopt,Platforms & Infra,FALSE,<p>TBD</p>
-DVC,Adopt,Tools,TRUE,<p>TBD</p>
-Jaeger,Adopt,Tools,FALSE,<p>TBD</p>
-k9s,Adopt,Tools,FALSE,<p>TBD</p>
-kind,Adopt,Tools,FALSE,<p>TBD</p>
-MURAL,Adopt,Tools,FALSE,<p>TBD</p>
-Gurobi,Assess,Tools,FALSE,<p>TBD</p>
-Zapier,Assess,Tools,FALSE,<p>TBD</p>
-Terragrunt,Assess,Tools,FALSE,<p>TBD</p>
-Apache Spark,Assess,Tools,FALSE,<p>TBD</p>
-Apache Superset,Assess,Tools,TRUE,<p>TBD</p>
-AsyncAPI,Assess,Tools,TRUE,<p>TBD</p>
-Gloo,Assess,Tools,TRUE,<p>TBD</p>
-Lens,Assess,Tools,TRUE,<p>TBD</p>
-Deequ,Assess,languages-and-frameworks,TRUE,<p>TBD</p>
-Tamer,Assess,languages-and-frameworks,TRUE,<p>TBD</p>
-XState,Assess,languages-and-frameworks,TRUE,<p>TBD</p>
-Enzyme,Assess,languages-and-frameworks,FALSE,<p>TBD</p>
-Symfony,Assess,languages-and-frameworks,FALSE,<p>TBD</p>
-Zend Framework 1,Hold,languages-and-frameworks,FALSE,<p>TBD</p>
-Zend Framework 3 / Laminas,Hold,languages-and-frameworks,FALSE,<p>TBD</p>
-Laravel,Hold,languages-and-frameworks,FALSE,<p>TBD</p>
-Yii,Hold,languages-and-frameworks,FALSE,<p>TBD</p>
+Scrum,Mainstream,Techniques,FALSE,<p>The default way of working in Emesa is Scrum.</p>
+Infrastructure as code,Adopt,Techniques,FALSE,"<p>Although <strong>infrastructure as code</strong> is a relatively old technique (we’ve featured it in the Radar in 2011), it has become vitally important in the modern cloud era where the act of setting up infrastructure has become the passing of configuration instructions to a cloud platform. When we say ""as code"" we mean that all the good practices we've learned in the software world should be applied to infrastructure. Using source control, adhering to the <a href=""https://en.wikipedia.org/wiki/Don%27t_repeat_yourself"">DRY principle</a>, modularization, maintainability, and using automated testing and deployment are all critical practices. Those of us with a deep software and infrastructure background need to empathize with and support colleagues who do not. Saying ""treat infrastructure like code"" isn't enough; we need to ensure the hard-won learnings from the software world are also applied consistently throughout the infrastructure realm.</p>"
+Hexagonal Architecture,Adopt,Techniques,FALSE,"<p>Design pattern as a flavour of layered or onion architecture. Used to decouple framework from application code and isolate better Domain, Application and Infrastructure layer. Also a good way to enforce a more DDD approach to projects. Hexagonal Architecture is also known as Poorts & Adapters. Used in FFS.</p>"
+Simplest possible feature toggle,Adopt,Techniques,FALSE,"<p>Unfortunately, <a href=""https://martinfowler.com/articles/feature-toggles.html"">feature toggles</a> are less common than we'd like, and quite often we see people mixing up its types and use cases. It's quite common to come across teams that use heavyweight platforms such as <a href=""https://launchdarkly.com/"">LaunchDarkly</a> to implement feature toggles, including release toggles, to benefit from <a href=""https://martinfowler.com/articles/continuousIntegration.html"">Continuous Integration</a>, when all you need are if/else conditionals. Therefore, unless you need A/B testing or <a href=""https://martinfowler.com/bliki/CanaryRelease.html"">canary release</a> or hand over feature release responsibility to business folks, we encourage you to use the <strong>simplest possible feature toggle</strong> instead of unnecessarily complex feature toggle frameworks.</p>"
+Architecture decision record (ADR),Adopt,Techniques,FALSE,"<p>All new written applications should have an <a href=""https://github.com/joelparkerhenderson/architecture_decision_record"">ADR</a> that captures all the relevant architecture decisions made over time.</p>"
+DDD,Adopt,Techniques,FALSE,"<p>With an increasing complex business model inside Emesa we need to design software and systems wisely. Domain Driven Design aims to tackle that complexity with techniques like Ubiquitos Language, Bounded Contexts and Strategic Domain Driven Design. This should lead to software/systems which are loosely coupled and with high cohesion.</p>"
+Continuous delivery for machine learning (CD4ML),Trial,Techniques,FALSE,"<p>Applying machine learning to make the business applications and services intelligent is more than just training models and serving them. It requires implementing end-to-end and continuously repeatable cycles of training, testing, deploying, monitoring and operating the models. <strong><a href=""https://martinfowler.com/articles/cd4ml.html"">Continuous delivery for machine learning (CD4ML)</a></strong> is a technique that enables reliable end-to-end cycles of development, deploying and monitoring machine learning models. The underpinning technology stack to enable CD4ML includes tooling for accessing and discovering data, version control of artefacts (such as data, model and code), continuous delivery pipelines, automated environment provisioning for various deployments and experiments, model performance assessment and tracking, and model operational observability. Companies can choose their own tool set depending on their existing tech stack. CD4ML emphasizes automation and removing manual handoffs. CD4ML is our de facto approach for developing ML models.</p>"
+Event Storming,Trial,Techniques,FALSE,"<p>Event Storming is a method of modeling business processes using domain events.
+With complex business processes, people usually know their part of the process very well. Having people from different departments in one room, allows (and requires!) a conversation. Knowledge silos get opened up. All learnings can be directly visualized.
+We tried this method a couple of times with different sized scopes. We believe it can be of value and has potential.</p>"
+Micro frontends,Assess,Techniques,FALSE,"<p>We've seen significant benefits from introducing <a href=""https://martinfowler.com/articles/microservices.html"">microservices</a>, which have allowed teams to scale the delivery of independently deployed and maintained services. Unfortunately, we've also seen many teams create a front-end monolith — a large, entangled browser application that sits on top of the back-end services — largely neutralizing the benefits of microservices. <strong>Micro frontends</strong> have continued to gain in popularity since they were first introduced. We've seen many teams adopt some form of this architecture as a way to manage the complexity of multiple developers and teams contributing to the same user experience. In June of last year, one of the originators of this technique published an <a href=""https://martinfowler.com/articles/micro-frontends.html"">introductory article</a> that serves as a reference for micro frontends. It shows how this style can be implemented using various web programming mechanisms and builds out an example application using <a href=""/radar/languages-and-frameworks/react-js"">React.js</a>. We're confident this style will grow in popularity as larger organizations try to decompose UI development across multiple teams.</p>"
+Development Lanes (Strategic/Tech/Fast),Hold,Techniques,FALSE,"<p>Because a team is constantly pulled in this 3 directions: strategic initiatives (business roadmap), technical backlog (constantly fixing technical debt) and operational work an approach would be to clearly separate this work inside a team to avoid distractions in each lane and enable scaling-up/down according to work load. More details can be found <a href=""https://medium.com/teads-engineering/growing-a-feature-team-using-lanes-2e50d5521006"">here</a></p>
+<p>It was trialed in Hammer Backend team back in 2019 with decent results and mixed feelings towards it. Was put on hold by the team and never revived again due to capacity issues which didn't meet requirements of a lane: at least 2 devs in 1 lane.</p>"
+MySQL,Mainstream,Platforms-and-Infra,FALSE,<p>Relational database used primarily in PHP projects.</p>
+RabbitMQ,Mainstream,Platforms-and-Infra,FALSE,<p>RabbitMQ is one of the most popular open source message brokers. Used for queues on prem.</p>
+Kafka,Mainstream,Platforms-and-Infra,FALSE,"<p>Apache Kafka is an open-source distributed event streaming platform used by thousands of companies for high-performance data pipelines, streaming analytics, data integration, and mission-critical applications. Kafka is THE message bus to be used inside Emesa for async communication between micro-services.</p>"
+Jenkins,Mainstream,Platforms-and-Infra,FALSE,"<p>We use Jenkins for CI/CD and automating some jobs.</p>"
+Keycloak,Adopt,Platforms-and-Infra,FALSE,<p>Open Source Identity and Access Management. Used in Emesa as SSO for internal applications.</p>
+Apache Airflow,Adopt,Platforms-and-Infra,FALSE,"<p><strong>Apache Airflow</strong> is a platform created by the community to programmatically author, schedule and monitor workflows. Use Airflow for On-Prem setups.</p>"
+Docker ,Adopt,Platforms-and-Infra,FALSE,"<p>Docker is currently the most-used solution for creating and managing container-based infrastructures and deployments. Backed by services such as Kubernetes, we can deploy Docker containers on a flexible infrastructure and enable our developers to test their software more easily in different environments.</p>"
+Grafana,Adopt,Platforms-and-Infra,FALSE,"<p>Grafana is a multi-platform open source analytics and interactive visualization web application. It provides charts, graphs, and alerts for the web when connected to supported data sources.</p>"
+Kubernetes,Adopt,Platforms-and-Infra,FALSE,"<p>Kubernetes, also known as K8s, is an open-source system for automating deployment, scaling, and management of containerized applications. We use it mostly for newly build micro-services deployed in the cloud.</p>"
+PostgreSQL,Adopt,Platforms-and-Infra,FALSE,<p>Relational database used primarily in data warehousing.</p>
+AWS DynamoDB,Adopt,Platforms-and-Infra,FALSE,<p>Amazon DynamoDB is a key-value and document database.</p>
+Redis ,Adopt,Platforms-and-Infra,FALSE,"<p>Redis is an open source (BSD licensed), in-memory data structure store, used as a database, cache, and message broker. In Emesa we use it mainly as a  in-memory data structure store.</p>"
+Minikube,Trial,Platforms-and-Infra,FALSE,<p>Minikube is a tool that lets you run Kubernetes locally.</p>
+Zabbix,Deprecated,Platforms-and-Infra,FALSE,<p>TBD</p>
+LXD,Deprecated,Platforms-and-Infra,FALSE,<p>LXD is a system container manager. It offers a user experience similar to virtual machines but using Linux containers instead. We use LXD for On Prem applications (including dev & test envs). Due to move to cloud we decided to stop using LXD and focus on Docker instead.</p>
+Sentry,Mainstream,Tools,FALSE,"<p>Sentry is an open-source full-stack error tracking system which supports a wide range of server, browser, desktop and native mobile languages and frameworks </p>"
+Terragrunt,Adopt,Tools,FALSE,"<p><strong><a href=""https://terragrunt.gruntwork.io"">Terragrunt</a></strong> Terragrunt is a thin wrapper that provides extra tools for keeping your configurations DRY, working with multiple Terraform modules, and managing remote state.</p>"
+AWS SQS,Adopt,Tools,FALSE,<p>For queues in the cloud.</p>
+SonarQube,Adopt,Tools,FALSE,"<p>We use SonarQube to get insight into code quality like: code coverage, bugs, complexities, etc.</p>"
+Matomo (ex Piwik),Adopt,Tools,FALSE,<p>Analytics for internal applications to help us track and analyze behaviour of our internal users.</p>
+Gurobi,Trial,Tools,FALSE,<p>Gurobi is a Mathematical Optimization Solver and we use to resolve models in context of marketing automation.</p>
+Zapier,Trial,Tools,FALSE,<p>Connects your apps and automates workflows. Used in context of marketing automation.</p>
+Apache Spark,Trial,Tools,FALSE,"<p><strong><a href=""https://spark.apache.org"">Apache Spark</a></strong> is a unified analytics engine for large-scale data processing</p>"
+Lenses,Trial,Tools,FALSE,"<p>Lenses enables you to deliver streaming applications faster and to manage your data flows natively over Apache Kafka.
+Lenses enriches your Kafka eco-system with a rich user interface, vital enterprise capabilities which enable engineering teams to query real-time data, create and monitor Kafka streaming topologies and integrate with other systems.</p>"
+Sylius,Assess,Tools,FALSE,<p>Headless E-commerce used to spin up quickly a traditional e-commmerce website.</p>
+Memcached,Deprecated,Tools,FALSE,<p>Key-value store used for legacy applications. For new ones Redis should be used instead.</p>
+Talend,Deprecated,Tools,FALSE,<p>Talend was used for some ETL processes but now we should move to Airflow instead.</p>
+Robot Framework,Mainstream,languages-and-frameworks,FALSE,"<p><a href=""https://robotframework.org"">Robot Framework</a> is a generic open source automation framework. It can be used for test automation and robotic process automation (RPA).</p>"
+Django,Mainstream,languages-and-frameworks,FALSE,<p>We use Django as our default Python framework.</p>
+Symfony,Mainstream,languages-and-frameworks,FALSE,<p>We use Symfony as our default PHP framework.</p>
+React,Adopt,languages-and-frameworks,FALSE,<p>We use React for SPA.</p>
 Flask,Adopt,languages-and-frameworks,FALSE,<p>TBD</p>
-Django,Adopt,languages-and-frameworks,FALSE,<p>TBD</p>
-Robot Framework,Adopt,languages-and-frameworks,FALSE,<p>TBD</p>
-Vue.js,Adopt,languages-and-frameworks,FALSE,<p>TBD</p>
-Typescript,Adopt,languages-and-frameworks,FALSE,<p>TBD</p>
-React JS,Adopt,languages-and-frameworks,FALSE,<p>TBD</p>
-Angular,Adopt,languages-and-frameworks,FALSE,<p>TBD</p>
+Vue.js,Adopt,languages-and-frameworks,FALSE,"<p><strong><a href=""https://vuejs.org/"">Vue.js</a></strong> has become one of the successfully applied, loved and trusted frontend JavaScript frameworks among our community. Although there are other, well-adopted alternatives, such as <a href=""/radar/languages-and-frameworks/react-js"">React.js</a>, the simplicity of Vue.js in API design, its clear segregation of directives and components (one file per component idiom) and its simpler state management have made it a compelling option among others.</p>"
+Angular,Hold,languages-and-frameworks,FALSE,<p>Use React instead even though we have some traces of Angular in some applications.</p>
+Laravel,Hold,languages-and-frameworks,FALSE,<p>With most of our (new) PHP applications written in Symfony there is no need to look elsewhere for the moment.</p>
+Flutter,Hold,languages-and-frameworks,FALSE,<p>We don't consider Flutter as mature enough (yet) to be used for our main auctioning apps. However it is an interesting framework that might be useful at some point for certain scenarios.</p>
+Zend Framework 1,Deprecated,languages-and-frameworks,FALSE,<p>This should not be used in building new applications even though is still a big part of our main monolith.</p>
+Cordova,Deprecated,languages-and-frameworks,FALSE,<p>We are moving to a fully native approach for mobile apps so Cordova is deprecated since it's slowy dying.</p>
+
