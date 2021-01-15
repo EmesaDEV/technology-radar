@@ -41,8 +41,8 @@ Lenses enriches your Kafka eco-system with a rich user interface, vital enterpri
 Sylius,Assess,Tools,FALSE,<p>Headless E-commerce used to spin up quickly a traditional e-commmerce website.</p>
 Memcached,Deprecated,Tools,FALSE,<p>Key-value store used for legacy applications. For new ones Redis should be used instead.</p>
 Talend,Deprecated,Tools,FALSE,<p>Talend was used for some ETL processes but now we should move to Airflow instead.</p>
-PHP,Adopt,Mainstream,FALSE,"<p>We use PHP for most web applications.</p>"
-Python,Adopt,Mainstream,FALSE,"<p>We use Python for more data oriented applications.</p>"
+PHP,Mainstream,languages-and-frameworks,FALSE,"<p>We use PHP for most web applications.</p>"
+Python,Mainstream,languages-and-frameworks,FALSE,"<p>We use Python for more data oriented applications.</p>"
 Robot Framework,Mainstream,languages-and-frameworks,FALSE,"<p><a href=""https://robotframework.org"">Robot Framework</a> is a generic open source automation framework. It can be used for test automation and robotic process automation (RPA).</p>"
 Django,Mainstream,languages-and-frameworks,FALSE,<p>We use Django as our default Python framework.</p>
 Symfony,Mainstream,languages-and-frameworks,FALSE,<p>We use Symfony as our default PHP framework.</p>
