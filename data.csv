@@ -17,13 +17,14 @@ MySQL,Mainstream,Platforms-and-Infra,FALSE,<p>Relational database used primarily
 RabbitMQ,Mainstream,Platforms-and-Infra,FALSE,<p>RabbitMQ is one of the most popular open source message brokers. Used for queues on prem.</p>
 Kafka,Mainstream,Platforms-and-Infra,FALSE,"<p>Apache Kafka is an open-source distributed event streaming platform used by thousands of companies for high-performance data pipelines, streaming analytics, data integration, and mission-critical applications. Kafka is THE message bus to be used inside Emesa for async communication between micro-services.</p>"
 Jenkins,Mainstream,Platforms-and-Infra,FALSE,"<p>We use Jenkins for CI/CD and automating some jobs.</p>"
+Odoo,Mainstream,Platforms-and-Infra,FALSE,"<p>Python based ERP framework, we use Community + Enterprise</p>"
 Keycloak,Adopt,Platforms-and-Infra,FALSE,<p>Open Source Identity and Access Management. Used in Emesa as SSO for internal applications.</p>
 Apache Airflow,Adopt,Platforms-and-Infra,FALSE,"<p><strong>Apache Airflow</strong> is a platform created by the community to programmatically author, schedule and monitor workflows. Use Airflow for On-Prem setups.</p>"
 Docker ,Adopt,Platforms-and-Infra,FALSE,"<p>Docker is currently the most-used solution for creating and managing container-based infrastructures and deployments. Backed by services such as Kubernetes, we can deploy Docker containers on a flexible infrastructure and enable our developers to test their software more easily in different environments.</p>"
 Grafana,Adopt,Platforms-and-Infra,FALSE,"<p>Grafana is a multi-platform open source analytics and interactive visualization web application. It provides charts, graphs, and alerts for the web when connected to supported data sources.</p>"
 Kubernetes,Adopt,Platforms-and-Infra,FALSE,"<p>Kubernetes, also known as K8s, is an open-source system for automating deployment, scaling, and management of containerized applications. We use it mostly for newly build micro-services deployed in the cloud.</p>"
-PostgreSQL,Adopt,Platforms-and-Infra,FALSE,<p>Relational database used primarily in data warehousing.</p>
-AWS DynamoDB,Adopt,Platforms-and-Infra,FALSE,<p>Amazon DynamoDB is a key-value and document database.</p>
+PostgreSQL,Mainstream,Platforms-and-Infra,FALSE,<p>Relational database used primarily in data warehousing & ERP/Odoo project.</p>
+AWS DynamoDB,Mainstream,Platforms-and-Infra,FALSE,<p>Amazon DynamoDB is a key-value and document database. Used in PG project.</p>
 Redis ,Adopt,Platforms-and-Infra,FALSE,"<p>Redis is an open source (BSD licensed), in-memory data structure store, used as a database, cache, and message broker. In Emesa we use it mainly as a  in-memory data structure store.</p>"
 Minikube,Trial,Platforms-and-Infra,FALSE,<p>Minikube is a tool that lets you run Kubernetes locally.</p>
 Zabbix,Deprecated,Platforms-and-Infra,FALSE,<p>TBD</p>
@@ -38,6 +39,7 @@ Zapier,Trial,Tools,FALSE,<p>Connects your apps and automates workflows. Used in 
 Apache Spark,Trial,Tools,FALSE,"<p><strong><a href=""https://spark.apache.org"">Apache Spark</a></strong> is a unified analytics engine for large-scale data processing</p>"
 Lenses,Trial,Tools,FALSE,"<p>Lenses enables you to deliver streaming applications faster and to manage your data flows natively over Apache Kafka.
 Lenses enriches your Kafka eco-system with a rich user interface, vital enterprise capabilities which enable engineering teams to query real-time data, create and monitor Kafka streaming topologies and integrate with other systems.</p>"
+Kafka Desktop Consumer,Trial,Tools,FALSE,"<p><a href="https://github.com/Nimja/kafka-desktop-consumer">Github</a> Internally developed desktop consumer.</p>"
 Sylius,Assess,Tools,FALSE,<p>Headless E-commerce used to spin up quickly a traditional e-commmerce website.</p>
 Memcached,Deprecated,Tools,FALSE,<p>Key-value store used for legacy applications. For new ones Redis should be used instead.</p>
 Talend,Deprecated,Tools,FALSE,<p>Talend was used for some ETL processes but now we should move to Airflow instead.</p>
