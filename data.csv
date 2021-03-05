@@ -44,6 +44,7 @@ Talend,Deprecated,Tools,FALSE,<p>Talend was used for some ETL processes but now 
 PHP,Mainstream,languages-and-frameworks,FALSE,"<p>We use PHP for most web applications.</p>"
 Python,Mainstream,languages-and-frameworks,FALSE,"<p>We use Python for more data oriented applications.</p>"
 Robot Framework,Mainstream,languages-and-frameworks,FALSE,"<p><a href=""https://robotframework.org"">Robot Framework</a> is a generic open source automation framework. It can be used for test automation and robotic process automation (RPA).</p>"
+Appium,Mainstream,languages-and-frameworks,FALSE,"<p><a href=""https://appium.io/"">Appium</a> is an open source test automation framework for use with native, hybrid and mobile web apps.</p>"
 Django,Mainstream,languages-and-frameworks,FALSE,<p>We use Django as our default Python framework.</p>
 Symfony,Mainstream,languages-and-frameworks,FALSE,<p>We use Symfony as our default PHP framework.</p>
 React,Adopt,languages-and-frameworks,FALSE,<p>We use React for SPA.</p>
