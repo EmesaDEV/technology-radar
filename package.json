@@ -1,5 +1,5 @@
 {
-  "name": "build-your-own-radar",
+  "name": "emesa-technology-radar",
   "version": "0.3.0",
   "description": "",
   "main": "index.js",
@@ -14,7 +14,7 @@
   "author": "ThoughtWorks",
   "repository": {
     "type": "git",
-    "url": "https://github.com/thoughtworks/build-your-own-radar"
+    "url": "https://github.com/EmesaDEV/technology-radar"
   },
   "keywords": [
     "tech-radar"

@@ -23,6 +23,8 @@ Grafana,Adopt,Platforms-and-Infra,FALSE,"<p>Grafana is a multi-platform open sou
 Kubernetes,Adopt,Platforms-and-Infra,FALSE,"<p>Kubernetes, also known as K8s, is an open-source system for automating deployment, scaling, and management of containerized applications. We use it mostly for newly build micro-services deployed in the cloud.</p>"
 PostgreSQL,Adopt,Platforms-and-Infra,FALSE,<p>Relational database used primarily in data warehousing.</p>
 AWS DynamoDB,Adopt,Platforms-and-Infra,FALSE,<p>Amazon DynamoDB is a key-value and document database.</p>
+AWS Elasticache Redis,Adopt,Platforms-and-Infra,FALSE,<p>Amazon Elasticache Redis is a in-memory data structure store, used as a database, cache and message broker.</p>
+Prometheus,Adopt,Platforms-and-Infra,FALSE,<p>An open-source monitoring system with a dimensional data model, flexible query language, efficient time series database and modern alerting approach.</p>
 Redis ,Adopt,Platforms-and-Infra,FALSE,"<p>Redis is an open source (BSD licensed), in-memory data structure store, used as a database, cache, and message broker. In Emesa we use it mainly as a  in-memory data structure store.</p>"
 Minikube,Trial,Platforms-and-Infra,FALSE,<p>Minikube is a tool that lets you run Kubernetes locally.</p>
 Zabbix,Deprecated,Platforms-and-Infra,FALSE,<p>TBD</p>
@@ -51,4 +53,3 @@ Laravel,Hold,languages-and-frameworks,FALSE,<p>With most of our (new) PHP applic
 Flutter,Hold,languages-and-frameworks,FALSE,<p>We don't consider Flutter as mature enough (yet) to be used for our main auctioning apps. However it is an interesting framework that might be useful at some point for certain scenarios.</p>
 Zend Framework 1,Deprecated,languages-and-frameworks,FALSE,<p>This should not be used in building new applications even though is still a big part of our main monolith.</p>
 Cordova,Deprecated,languages-and-frameworks,FALSE,<p>We are moving to a fully native approach for mobile apps so Cordova is deprecated since it's slowy dying.</p>
-

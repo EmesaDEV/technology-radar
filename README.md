@@ -80,7 +80,7 @@ All tasks are defined in `package.json`.
 Please write tests whenever possible. 
 Make sure you have nodejs installed.
 
-- `git clone git@github.com:thoughtworks/build-your-own-radar.git`
+- `git clone git@github.com:EmesaDEV/technology-radar.git`
 - `npm install`
 - `npm test` - to run your tests
 - `npm run dev` - to run application in localhost:8080. This will watch the .js and .css files and rebuild on file changes
@@ -104,3 +104,7 @@ npm install && npm rebuild node-sass && npm run dev
 ```
 
 After building it will start on `localhost:8080`
+
+## Join us
+
+Checkout our [Careers page](https://www.werkenbijemesa.nl/?lang=en&tags%5B%5D=department%2CProduct%20%26%20Technology&)
