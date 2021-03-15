@@ -47,8 +47,13 @@ Robot Framework,Mainstream,languages-and-frameworks,FALSE,"<p><a href=""https://
 Django,Mainstream,languages-and-frameworks,FALSE,<p>We use Django as our default Python framework.</p>
 Symfony,Mainstream,languages-and-frameworks,FALSE,<p>We use Symfony as our default PHP framework.</p>
 React,Adopt,languages-and-frameworks,FALSE,<p>We use React for SPA.</p>
+Redux,Adopt,languages-and-frameworks,TRUE,<p>We use Redux for state management.</p>
 Flask,Adopt,languages-and-frameworks,FALSE,<p>TBD</p>
 Vue.js,Adopt,languages-and-frameworks,FALSE,"<p><strong><a href=""https://vuejs.org/"">Vue.js</a></strong> has become one of the successfully applied, loved and trusted frontend JavaScript frameworks among our community. Although there are other, well-adopted alternatives, such as <a href=""/radar/languages-and-frameworks/react-js"">React.js</a>, the simplicity of Vue.js in API design, its clear segregation of directives and components (one file per component idiom) and its simpler state management have made it a compelling option among others.</p>"
+NodeJS,Adopt,languages-and-frameworks,TRUE,"<p>We use NodeJS for SPA, API gateway and websocket applications.</p>"
+Typescript,Adopt,languages-and-frameworks,TRUE,"<p>We use Typescript on newer applications that are closer to the end-user.</p>"
+Next.js,Adopt,languages-and-frameworks,TRUE,<p>We are rebuilding our main platform using Next.js as the framework.</p>
+NestJS,Adopt,languages-and-frameworks,TRUE,<p>We use NestJS for building the API gateway for microservices.</p>
 Angular,Hold,languages-and-frameworks,FALSE,<p>Use React instead even though we have some traces of Angular in some applications.</p>
 Laravel,Hold,languages-and-frameworks,FALSE,<p>With most of our (new) PHP applications written in Symfony there is no need to look elsewhere for the moment.</p>
 Flutter,Hold,languages-and-frameworks,FALSE,<p>We don't consider Flutter as mature enough (yet) to be used for our main auctioning apps. However it is an interesting framework that might be useful at some point for certain scenarios.</p>
