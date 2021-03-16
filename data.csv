@@ -36,6 +36,7 @@ Terragrunt,Adopt,Tools,FALSE,"<p><strong><a href=""https://terragrunt.gruntwork.
 AWS SQS,Adopt,Tools,FALSE,<p>For queues in the cloud.</p>
 SonarQube,Adopt,Tools,FALSE,"<p>We use SonarQube to get insight into code quality like: code coverage, bugs, complexities, etc.</p>"
 Matomo (ex Piwik),Adopt,Tools,FALSE,<p>Analytics for internal applications to help us track and analyze behaviour of our internal users.</p>
+Debezium,Adopt,Tools,FALSE,"<p><strong>Debezium</strong> is a tool that allows real time streaming of database changes to our Kafka cluster. For the ELT processes using Debezium we achieve near-realtime updates for our Data Warehouse, allowing applications and processes that rely on this data to react very fast to changing conditions.</p>"
 Gurobi,Trial,Tools,FALSE,<p>Gurobi is a Mathematical Optimization Solver and we use to resolve models in context of marketing automation.</p>
 Zapier,Trial,Tools,FALSE,<p>Connects your apps and automates workflows. Used in context of marketing automation.</p>
 Apache Spark,Trial,Tools,FALSE,"<p><strong><a href=""https://spark.apache.org"">Apache Spark</a></strong> is a unified analytics engine for large-scale data processing</p>"
