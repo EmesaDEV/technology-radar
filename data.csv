@@ -27,7 +27,7 @@ AWS SQS,Adopt,Platforms-and-Infra,FALSE,<p>For queues in the cloud.</p>
 Minikube,Trial,Platforms-and-Infra,FALSE,<p>Minikube is a tool that lets you run Kubernetes locally.</p>
 LXD,Hold,Platforms-and-Infra,FALSE,<p>LXD is a system container manager. It offers a user experience similar to virtual machines but using Linux containers instead. We use LXD for On Prem applications (including dev & test envs). Due to move to cloud we decided to stop using LXD and focus on Docker instead.</p>
 Solr,Hold,Platforms-and-Infra,FALSE,<p>Solr is an indexing platform used by Hammer and AvdD. On Hammer it's used to index lots but it's deprecated and being replaced by Elastic Search. On AvdD it's used to index products.</p>
-Elastic Search,Adopt,Platforms-and-Infra,FALSE,<p>Elastic Search is an indexing platform used by Hammer to index lots but.</p>
+Elastic Search,Adopt,Platforms-and-Infra,FALSE,<p>Elastic Search is an indexing platform used by Hammer to index lots.</p>
 New Relic,Adopt,Platforms-and-Infra,FALSE,<p>Monitoring tool for web and mobile applications.</p>
 Pingdom,Adopt,Platforms-and-Infra,FALSE,<p>Application monitoring tool.</p>
 Sentry,Mainstream,Tools,FALSE,"<p>Sentry is an open-source full-stack error tracking system which supports a wide range of server, browser, desktop and native mobile languages and frameworks </p>"
@@ -42,7 +42,7 @@ Terragrunt,Trial,Tools,FALSE,"<p><strong><a href=""https://terragrunt.gruntwork.
 Gurobi,Trial,Tools,FALSE,<p>Gurobi is a Mathematical Optimization Solver and we use to resolve models in context of marketing automation.</p>
 Zapier,Trial,Tools,FALSE,<p>Connects your apps and automates workflows. Used in context of marketing automation.</p>
 Apache Spark,Trial,Tools,FALSE,"<p><strong><a href=""https://spark.apache.org"">Apache Spark</a></strong> is a unified analytics engine for large-scale data processing</p>"
-ELK,Trial,Tools,TRUE,"<p>We are now using the ELK stack to enable advanced searching on our application logs</p>"
+ELK,Adopt,Tools,TRUE,"<p>We are now using the ELK stack to enable advanced searching on our application logs</p>"
 Lenses,Hold,Tools,FALSE,"<p>Lenses enables you to deliver streaming applications faster and to manage your data flows natively over Apache Kafka. Lenses enriches your Kafka eco-system with a rich user interface, vital enterprise capabilities which enable engineering teams to query real-time data, create and monitor Kafka streaming topologies and integrate with other systems.</p>"
 Zabbix,Deprecated,Tools,FALSE,<p>Main monitoring and alerting tool for our on-prem infrastructure</p>
 Memcached,Deprecated,Tools,FALSE,<p>Key-value store used for legacy applications. For new ones Redis should be used instead.</p>
