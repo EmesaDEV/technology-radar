@@ -19,6 +19,9 @@ Docker ,Adopt,Platforms-and-Infra,FALSE,"<p>Docker is currently the most-used so
 Kubernetes,Adopt,Platforms-and-Infra,FALSE,"<p>Kubernetes, also known as K8s, is an open-source system for automating deployment, scaling, and management of containerized applications. We use it mostly for newly build micro-services deployed in the cloud.</p>"
 PostgreSQL,Adopt,Platforms-and-Infra,FALSE,<p>Relational database used primarily in data warehousing.</p>
 AWS DynamoDB,Adopt,Platforms-and-Infra,FALSE,<p>Amazon DynamoDB is a key-value and document database.</p>
+AWS Elasticache Redis,Adopt,Platforms-and-Infra,FALSE,<p>Amazon Elasticache Redis is a in-memory data structure store, used as a database, cache and message broker.</p>
+AWS S3,Adopt,Platforms-and-Infra,FALSE,<p>AWS S3 is a scalable object storage provided by AWS</p>
+Prometheus,Adopt,Platforms-and-Infra,FALSE,<p>An open-source monitoring system with a dimensional data model, flexible query language, efficient time series database and modern alerting approach.</p>
 Redis ,Adopt,Platforms-and-Infra,FALSE,"<p>Redis is an open source (BSD licensed), in-memory data structure store, used as a database, cache, and message broker. In Emesa we use it mainly as a  in-memory data structure store.</p>"
 AWS SQS,Adopt,Platforms-and-Infra,FALSE,<p>For queues in the cloud.</p>
 Minikube,Trial,Platforms-and-Infra,FALSE,<p>Minikube is a tool that lets you run Kubernetes locally.</p>
@@ -49,11 +52,17 @@ Ansible,Adopt,Tools,FALSE,<p>Automation tool used to build some applications.</p
 PHP,Mainstream,languages-and-frameworks,FALSE,"<p>We use PHP for most web applications.</p>"
 Python,Mainstream,languages-and-frameworks,FALSE,"<p>We use Python for more data oriented applications.</p>"
 Robot Framework,Mainstream,languages-and-frameworks,FALSE,"<p><a href=""https://robotframework.org"">Robot Framework</a> is a generic open source automation framework. It can be used for test automation and robotic process automation (RPA).</p>"
+Appium,Mainstream,languages-and-frameworks,FALSE,"<p><a href=""https://appium.io/"">Appium</a> is an open source test automation framework for use with native, hybrid and mobile web apps.</p>"
 Django,Mainstream,languages-and-frameworks,FALSE,<p>We use Django as our default Python framework.</p>
 Symfony,Mainstream,languages-and-frameworks,FALSE,<p>We use Symfony as our default PHP framework.</p>
 React,Adopt,languages-and-frameworks,FALSE,<p>We use React for SPA.</p>
+Redux,Adopt,languages-and-frameworks,TRUE,<p>We use Redux for state management.</p>
 Flask,Adopt,languages-and-frameworks,FALSE,<p>TBD</p>
 Vue.js,Adopt,languages-and-frameworks,FALSE,"<p><strong><a href=""https://vuejs.org/"">Vue.js</a></strong> has become one of the successfully applied, loved and trusted frontend JavaScript frameworks among our community. Although there are other, well-adopted alternatives, such as <a href=""/radar/languages-and-frameworks/react-js"">React.js</a>, the simplicity of Vue.js in API design, its clear segregation of directives and components (one file per component idiom) and its simpler state management have made it a compelling option among others.</p>"
+NodeJS,Adopt,languages-and-frameworks,TRUE,"<p>We use NodeJS for SPA, API gateway and websocket applications.</p>"
+Typescript,Adopt,languages-and-frameworks,TRUE,"<p>We use Typescript on newer applications that are closer to the end-user.</p>"
+Next.js,Adopt,languages-and-frameworks,TRUE,<p>We are rebuilding our main platform using Next.js as the framework.</p>
+NestJS,Adopt,languages-and-frameworks,TRUE,<p>We use NestJS for building the API gateway for microservices.</p>
 Sylius,Assess,languages-and-frameworks,FALSE,<p>Headless E-commerce used to spin up quickly a traditional e-commmerce website.</p>
 Angular,Hold,languages-and-frameworks,FALSE,<p>Use React instead even though we have some traces of Angular in some applications.</p>
 Laravel,Hold,languages-and-frameworks,FALSE,<p>With most of our (new) PHP applications written in Symfony there is no need to look elsewhere for the moment.</p>
