@@ -5,7 +5,7 @@ Robot Framework,Mainstream,languages-and-frameworks,FALSE,"<p><a href=""https://
 Django,Mainstream,languages-and-frameworks,FALSE,<p>We use Django as our default Python framework.</p>
 Symfony,Mainstream,languages-and-frameworks,FALSE,<p>We use Symfony as our default PHP framework.</p>
 React,Adopt,languages-and-frameworks,FALSE,<p>We use React for SPA.</p>
-Flask,Adopt,languages-and-frameworks,FALSE,<p>TBD</p>
+Flask,Adopt,languages-and-frameworks,FALSE,<p><a href="https://palletsprojects.com/p/flask/" target="”_blank”>Flask</a> is a WSGI web app microframework developed by Armin Ronacher with many cool features like url routing and template engine.</p>
 Vue.js,Adopt,languages-and-frameworks,FALSE,"<p><strong><a href=""https://vuejs.org/"">Vue.js</a></strong> has become one of the successfully applied, loved and trusted frontend JavaScript frameworks among our community. Although there are other, well-adopted alternatives, such as <a href=""/radar/languages-and-frameworks/react-js"">React.js</a>, the simplicity of Vue.js in API design, its clear segregation of directives and components (one file per component idiom) and its simpler state management have made it a compelling option among others.</p>"
 Angular,Hold,languages-and-frameworks,FALSE,<p>Use React instead even though we have some traces of Angular in some applications.</p>
 Laravel,Hold,languages-and-frameworks,FALSE,<p>With most of our (new) PHP applications written in Symfony there is no need to look elsewhere for the moment.</p>
@@ -13,7 +13,6 @@ Flutter,Hold,languages-and-frameworks,FALSE,<p>We don't consider Flutter as matu
 Zend Framework 1,Deprecated,languages-and-frameworks,FALSE,<p>This should not be used in building new applications even though is still a big part of our main monolith.</p>
 Cordova,Deprecated,languages-and-frameworks,FALSE,<p>We are moving to a fully native approach for mobile apps so Cordova is deprecated since it's slowy dying.</p>
 django-channels,Adopt,languages-and-frameworks,FALSE,"<p><a href=”https://channels.readthedocs.io/en/stable/” target=”_blank”>Channels</a> is a project that takes Django and extends its abilities beyond HTTP - to handle WebSockets, chat protocols, IoT protocols, and more. It’s built on a Python specification called ASGI.</p>"
-pytest,Mainstream,Languages-and-frameworks,TRUE,"<a href=”https://docs.pytest.org/en/stable/’>The pytest framework</p> makes it easy to write small tests, yet scales to support complex functional testing for applications and libraries."
 celery,Mainstream,Languages-and-frameworks,FALSE,"<p><a href=""http://mypy-lang.org/"" target=”_blank”>mypy</a> Mypy is an optional static type checker for Python that aims to combine the benefits of dynamic (or ""duck"") typing and static typing.</phttp://mypy-lang"
 MySQL,Mainstream,Platforms-and-Infra,FALSE,<p>Relational database used primarily in PHP projects.</p>
 RabbitMQ,Mainstream,Platforms-and-Infra,FALSE,<p>RabbitMQ is one of the most popular open source message brokers. Used for queues on prem.</p>
@@ -62,10 +61,4 @@ Lenses enriches your Kafka eco-system with a rich user interface, vital enterpri
 Sylius,Assess,Tools,FALSE,<p>Headless E-commerce used to spin up quickly a traditional e-commmerce website.</p>
 Memcached,Deprecated,Tools,FALSE,<p>Key-value store used for legacy applications. For new ones Redis should be used instead.</p>
 Talend,Deprecated,Tools,FALSE,<p>Talend was used for some ETL processes but now we should move to Airflow instead.</p>
-pylint,Mainstream,Tools,FALSE,"<p><a href=""https://pylint.org/"" target=”_blank”>Pylint</a> The python linter.</p>"
-mypy,Adopt,Tools,FALSE,"<p><a href=""http://mypy-lang.org/"" target=”_blank”>Mypy</a> is an optional static type checker for Python that aims to combine the benefits of dynamic (or ""duck"") typing and static typing.</p>"
-black,Adopt,Tools,FALSE,<p><a href=”https://github.com/psf/black” target=”_blank”>Black</a>: The Uncompromising Code Formatter</p>
-poetry,Adopt,Tools,FALSE,<p><a href=”https://python-poetry.org/” target=”_blank”>Poetry</a> Python packaging and dependency management made easy.</p>
-isort,Mainstream,Tools,FALSE,"<p><a href=""https://pycqa.github.io/isort/"" target=”_blank”>isort</a> your imports, so you don't have to.</p>"
 sphinx,Adopt,Tools,FALSE,"<p><a href=”https://www.sphinx-doc.org” target=”_blank”>Sphinx</a> is a tool that makes it easy to create intelligent and beautiful documentation, written by Georg Brandl and licensed under the BSD license.</p>"
-factory-boy,Adopt,Tools,FALSE,<p><a href=”https://factoryboy.readthedocs.io” target=”_blank”>factory_boy</a> is a fixtures replacement based on thoughtbot’s factory_bot.</p>
