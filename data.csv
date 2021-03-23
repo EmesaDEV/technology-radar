@@ -37,10 +37,9 @@ Matomo (ex Piwik),Adopt,Tools,FALSE,<p>Analytics for internal applications to he
 Gurobi,Trial,Tools,FALSE,<p>Gurobi is a Mathematical Optimization Solver and we use to resolve models in context of marketing automation.</p>
 Zapier,Trial,Tools,FALSE,<p>Connects your apps and automates workflows. Used in context of marketing automation.</p>
 Apache Spark,Trial,Tools,FALSE,"<p><strong><a href=""https://spark.apache.org"">Apache Spark</a></strong> is a unified analytics engine for large-scale data processing</p>"
-Lenses,Trial,Tools,FALSE,"<p>Lenses enables you to deliver streaming applications faster and to manage your data flows natively over Apache Kafka.
-Lenses enriches your Kafka eco-system with a rich user interface, vital enterprise capabilities which enable engineering teams to query real-time data, create and monitor Kafka streaming topologies and integrate with other systems.</p>"
-Kafka Desktop Consumer,Trial,Tools,FALSE,"<p><a href="https://github.com/Nimja/kafka-desktop-consumer">Github</a> Internally developed desktop consumer.</p>"
-Sylius,Assess,Tools,FALSE,<p>Headless E-commerce used to spin up quickly a traditional e-commmerce website.</p>
+Lenses,Trial,Tools,FALSE,"<p>Kafka Client for DWH clusters.</p>"
+KaDeck,Trial,Tools,FALSE,"<p>Kafka Client for the clusters used by applications.</p>"
+Sylius,Trial,Tools,FALSE,<p>Headless E-commerce used to spin up quickly a traditional e-commmerce website. We use it for the new ActieVanDeDag platform.</p>
 Memcached,Deprecated,Tools,FALSE,<p>Key-value store used for legacy applications. For new ones Redis should be used instead.</p>
 Talend,Deprecated,Tools,FALSE,<p>Talend was used for some ETL processes but now we should move to Airflow instead.</p>
 PHP,Mainstream,languages-and-frameworks,FALSE,"<p>We use PHP for most web applications.</p>"
@@ -55,4 +54,4 @@ Angular,Hold,languages-and-frameworks,FALSE,<p>Use React instead even though we 
 Laravel,Hold,languages-and-frameworks,FALSE,<p>With most of our (new) PHP applications written in Symfony there is no need to look elsewhere for the moment.</p>
 Flutter,Hold,languages-and-frameworks,FALSE,<p>We don't consider Flutter as mature enough (yet) to be used for our main auctioning apps. However it is an interesting framework that might be useful at some point for certain scenarios.</p>
 Zend Framework 1,Deprecated,languages-and-frameworks,FALSE,<p>This should not be used in building new applications even though is still a big part of our main monolith.</p>
-Cordova,Deprecated,languages-and-frameworks,FALSE,<p>We are moving to a fully native approach for mobile apps so Cordova is deprecated since it's slowy dying.</p>
+Cordova,Deprecated,languages-and-frameworks,FALSE,<p>We are moving to a fully native approach for mobile apps so Cordova is deprecated since it's slowly dying.</p>
