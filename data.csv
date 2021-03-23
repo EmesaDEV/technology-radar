@@ -17,12 +17,12 @@ AWS,Mainstream,Platforms-and-Infra,FALSE,"<p>We use AWS as the default infrastru
 Apache Airflow,Adopt,Platforms-and-Infra,FALSE,"<p><strong>Apache Airflow</strong> is a platform created by the community to programmatically author, schedule and monitor workflows. Use Airflow for On-Prem setups.</p>"
 Docker ,Adopt,Platforms-and-Infra,FALSE,"<p>Docker is currently the most-used solution for creating and managing container-based infrastructures and deployments. Backed by services such as Kubernetes, we can deploy Docker containers on a flexible infrastructure and enable our developers to test their software more easily in different environments.</p>"
 Kubernetes,Adopt,Platforms-and-Infra,FALSE,"<p>Kubernetes, also known as K8s, is an open-source system for automating deployment, scaling, and management of containerized applications. We use it mostly for newly build micro-services deployed in the cloud.</p>"
-PostgreSQL,Adopt,Platforms-and-Infra,FALSE,<p>Relational database used primarily in data warehousing.</p>
-AWS DynamoDB,Adopt,Platforms-and-Infra,FALSE,<p>Amazon DynamoDB is a key-value and document database.</p>
+PostgreSQL,Mainstream,Platforms-and-Infra,FALSE,<p>Relational database used primarily in data warehousing & ERP/Odoo project.</p>
+Redis ,Adopt,Platforms-and-Infra,FALSE,"<p>Redis is an open source (BSD licensed), in-memory data structure store, used as a database, cache, and message broker. In Emesa we use it mainly as a  in-memory data structure store.</p>"
+AWS DynamoDB,Mainstream,Platforms-and-Infra,FALSE,<p>Amazon DynamoDB is a key-value and document database. Used in PG project.</p>
 AWS Elasticache Redis,Adopt,Platforms-and-Infra,FALSE,<p>Amazon Elasticache Redis is a in-memory data structure store, used as a database, cache and message broker.</p>
 AWS S3,Adopt,Platforms-and-Infra,FALSE,<p>AWS S3 is a scalable object storage provided by AWS</p>
 Prometheus,Adopt,Platforms-and-Infra,FALSE,<p>An open-source monitoring system with a dimensional data model, flexible query language, efficient time series database and modern alerting approach.</p>
-Redis ,Adopt,Platforms-and-Infra,FALSE,"<p>Redis is an open source (BSD licensed), in-memory data structure store, used as a database, cache, and message broker. In Emesa we use it mainly as a  in-memory data structure store.</p>"
 AWS SQS,Adopt,Platforms-and-Infra,FALSE,<p>For queues in the cloud.</p>
 Minikube,Trial,Platforms-and-Infra,FALSE,<p>Minikube is a tool that lets you run Kubernetes locally.</p>
 LXD,Hold,Platforms-and-Infra,FALSE,<p>LXD is a system container manager. It offers a user experience similar to virtual machines but using Linux containers instead. We use LXD for On Prem applications (including dev & test envs). Due to move to cloud we decided to stop using LXD and focus on Docker instead.</p>
@@ -43,8 +43,9 @@ Debezium,Adopt,Tools,FALSE,"<p><strong>Debezium</strong> is a tool that allows r
 Gurobi,Trial,Tools,FALSE,<p>Gurobi is a Mathematical Optimization Solver and we use to resolve models in context of marketing automation.</p>
 Zapier,Trial,Tools,FALSE,<p>Connects your apps and automates workflows. Used in context of marketing automation.</p>
 Apache Spark,Trial,Tools,FALSE,"<p><strong><a href=""https://spark.apache.org"">Apache Spark</a></strong> is a unified analytics engine for large-scale data processing</p>"
-ELK,Adopt,Tools,TRUE,"<p>We are now using the ELK stack to enable advanced searching on our application logs</p>"
+KaDeck,Trial,Tools,FALSE,"<p>Kafka Client for the clusters used by applications.</p>"
 Lenses,Hold,Tools,FALSE,"<p>Lenses enables you to deliver streaming applications faster and to manage your data flows natively over Apache Kafka. Lenses enriches your Kafka eco-system with a rich user interface, vital enterprise capabilities which enable engineering teams to query real-time data, create and monitor Kafka streaming topologies and integrate with other systems.</p>"
+ELK,Adopt,Tools,TRUE,"<p>We are now using the ELK stack to enable advanced searching on our application logs</p>"
 Zabbix,Deprecated,Tools,FALSE,<p>Main monitoring and alerting tool for our on-prem infrastructure</p>
 Memcached,Deprecated,Tools,FALSE,<p>Key-value store used for legacy applications. For new ones Redis should be used instead.</p>
 Talend,Deprecated,Tools,FALSE,<p>Talend was used for some ETL processes but now we should move to Airflow instead.</p>
@@ -64,9 +65,9 @@ NodeJS,Adopt,languages-and-frameworks,TRUE,"<p>We use NodeJS for SPA, API gatewa
 Typescript,Adopt,languages-and-frameworks,TRUE,"<p>We use Typescript on newer applications that are closer to the end-user.</p>"
 Next.js,Adopt,languages-and-frameworks,TRUE,<p>We are rebuilding our main platform using Next.js as the framework.</p>
 NestJS,Adopt,languages-and-frameworks,TRUE,<p>We use NestJS for building the API gateway for microservices.</p>
-Sylius,Assess,languages-and-frameworks,FALSE,<p>Headless E-commerce used to spin up quickly a traditional e-commmerce website.</p>
+Sylius,Trial,languages-and-frameworks,FALSE,<p>Headless E-commerce used to spin up quickly a traditional e-commmerce website.</p>
 Angular,Hold,languages-and-frameworks,FALSE,<p>Use React instead even though we have some traces of Angular in some applications.</p>
 Laravel,Hold,languages-and-frameworks,FALSE,<p>With most of our (new) PHP applications written in Symfony there is no need to look elsewhere for the moment.</p>
 Flutter,Hold,languages-and-frameworks,FALSE,<p>We don't consider Flutter as mature enough (yet) to be used for our main auctioning apps. However it is an interesting framework that might be useful at some point for certain scenarios.</p>
 Zend Framework 1,Deprecated,languages-and-frameworks,FALSE,<p>This should not be used in building new applications even though is still a big part of our main monolith.</p>
-Cordova,Deprecated,languages-and-frameworks,FALSE,<p>We are moving to a fully native approach for mobile apps so Cordova is deprecated since it's slowy dying.</p>
+Cordova,Deprecated,languages-and-frameworks,FALSE,<p>We are moving to a fully native approach for mobile apps so Cordova is deprecated since it's slowly dying.</p>
