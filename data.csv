@@ -18,12 +18,17 @@ Apache Airflow,Adopt,Platforms-and-Infra,FALSE,"<p><strong>Apache Airflow</stron
 Docker ,Adopt,Platforms-and-Infra,FALSE,"<p>Docker is currently the most-used solution for creating and managing container-based infrastructures and deployments. Backed by services such as Kubernetes, we can deploy Docker containers on a flexible infrastructure and enable our developers to test their software more easily in different environments.</p>"
 Kubernetes,Adopt,Platforms-and-Infra,FALSE,"<p>Kubernetes, also known as K8s, is an open-source system for automating deployment, scaling, and management of containerized applications. We use it mostly for newly build micro-services deployed in the cloud.</p>"
 PostgreSQL,Mainstream,Platforms-and-Infra,FALSE,<p>Relational database used primarily in data warehousing & ERP/Odoo project.</p>
-Redis ,Adopt,Platforms-and-Infra,FALSE,"<p>Redis is an open source (BSD licensed), in-memory data structure store, used as a database, cache, and message broker. In Emesa we use it mainly as a  in-memory data structure store.</p>"
+Redis,Adopt,Platforms-and-Infra,FALSE,"<p>Redis is an open source (BSD licensed), in-memory data structure store, used as a database, cache, and message broker. In Emesa we use it mainly as a  in-memory data structure store.</p>"
 AWS DynamoDB,Mainstream,Platforms-and-Infra,FALSE,<p>Amazon DynamoDB is a key-value and document database. Used in PG project.</p>
 AWS Elasticache Redis,Adopt,Platforms-and-Infra,FALSE,<p>Amazon Elasticache Redis is a in-memory data structure store, used as a database, cache and message broker.</p>
 AWS S3,Adopt,Platforms-and-Infra,FALSE,<p>AWS S3 is a scalable object storage provided by AWS</p>
 Prometheus,Adopt,Platforms-and-Infra,FALSE,<p>An open-source monitoring system with a dimensional data model, flexible query language, efficient time series database and modern alerting approach.</p>
 AWS SQS,Adopt,Platforms-and-Infra,FALSE,<p>For queues in the cloud.</p>
+AWS Lambda,Assess,Platforms-and-infra,TRUE,"<p>AWS Lambda is a serverless compute service that lets you run code without provisioning or managing servers, creating workload-aware cluster scaling logic, maintaining event integrations, or managing runtimes.</p>"
+AWS Kinesis,Assess,Platforms-and-infra,TRUE,"<p>Amazon Kinesis makes it easy to collect, process, and analyze real-time, streaming data so you can get timely insights and react quickly to new information.</p>"
+AWS SageMaker,Adopt,Platforms-and-infra,TRUE,"<p>Amazon SageMaker helps data scientists and developers to prepare, build, train, and deploy high-quality machine learning (ML) models quickly by bringing together a broad set of capabilities purpose-built for ML.</p>"
+Uwsgi,Mainstream,Platforms-and-infra,FALSE,"<p><a href=""http://mypy-lang.org/"">The uWSGI project</a> aims at developing a full stack for building hosting services.</p>"
+RedisGraph,Assess,Platforms-and-infra,TRUE,"<p><a href=""https://redislabs.com/modules/redis-graph/"" target=”_blank”>RedisGraph</a> is based on a unique approach and architecture that translates Cypher queries to matrix operations executed over a GraphBLAS engine. This new design allows use cases like social graph operation, fraud detection, and real-time recommendation to be executed 10x – 600x faster than any other graph database.</p>"
 Minikube,Trial,Platforms-and-Infra,FALSE,<p>Minikube is a tool that lets you run Kubernetes locally.</p>
 LXD,Hold,Platforms-and-Infra,FALSE,<p>LXD is a system container manager. It offers a user experience similar to virtual machines but using Linux containers instead. We use LXD for On Prem applications (including dev & test envs). Due to move to cloud we decided to stop using LXD and focus on Docker instead.</p>
 Solr,Hold,Platforms-and-Infra,FALSE,<p>Solr is an indexing platform used by Hammer and AvdD. On Hammer it's used to index lots but it's deprecated and being replaced by Elastic Search. On AvdD it's used to index products.</p>
@@ -51,20 +56,23 @@ Memcached,Deprecated,Tools,FALSE,<p>Key-value store used for legacy applications
 Talend,Deprecated,Tools,FALSE,<p>Talend was used for some ETL processes but now we should move to Airflow instead.</p>
 Puppet,Hold,Tools,FALSE,<p>Puppet is used to provision on-prem servers. Since we are moving to cloud (AWS), Puppet tends to be deprecated, But because we still maintain on-prem infra and we still don't know if everything will be moved to cloud, it's on hold.</p>
 Ansible,Adopt,Tools,FALSE,<p>Automation tool used to build some applications.</p>
+Sphinx,Adopt,Tools,FALSE,"<p><a href=”https://www.sphinx-doc.org” target=”_blank”>Sphinx</a> is a tool that makes it easy to create intelligent and beautiful documentation, written by Georg Brandl and licensed under the BSD license.</p>"
 PHP,Mainstream,languages-and-frameworks,FALSE,"<p>We use PHP for most web applications.</p>"
 Python,Mainstream,languages-and-frameworks,FALSE,"<p>We use Python for more data oriented applications.</p>"
 Robot Framework,Mainstream,languages-and-frameworks,FALSE,"<p><a href=""https://robotframework.org"">Robot Framework</a> is a generic open source automation framework. It can be used for test automation and robotic process automation (RPA).</p>"
 Appium,Mainstream,languages-and-frameworks,FALSE,"<p><a href=""https://appium.io/"">Appium</a> is an open source test automation framework for use with native, hybrid and mobile web apps.</p>"
 Django,Mainstream,languages-and-frameworks,FALSE,<p>We use Django as our default Python framework.</p>
+Django-channels,Adopt,languages-and-frameworks,FALSE,"<p><a href=”https://channels.readthedocs.io/en/stable/” target=”_blank”>Channels</a> is a project that takes Django and extends its abilities beyond HTTP - to handle WebSockets, chat protocols, IoT protocols, and more. It’s built on a Python specification called ASGI.</p>"
 Symfony,Mainstream,languages-and-frameworks,FALSE,<p>We use Symfony as our default PHP framework.</p>
 React,Adopt,languages-and-frameworks,FALSE,<p>We use React for SPA.</p>
 Redux,Adopt,languages-and-frameworks,TRUE,<p>We use Redux for state management.</p>
-Flask,Adopt,languages-and-frameworks,FALSE,<p>TBD</p>
+Flask,Adopt,languages-and-frameworks,FALSE,<p><a href="https://palletsprojects.com/p/flask/" target="”_blank”>Flask</a> is a WSGI web app microframework developed by Armin Ronacher with many cool features like url routing and template engine.</p>
 Vue.js,Adopt,languages-and-frameworks,FALSE,"<p><strong><a href=""https://vuejs.org/"">Vue.js</a></strong> has become one of the successfully applied, loved and trusted frontend JavaScript frameworks among our community. Although there are other, well-adopted alternatives, such as <a href=""/radar/languages-and-frameworks/react-js"">React.js</a>, the simplicity of Vue.js in API design, its clear segregation of directives and components (one file per component idiom) and its simpler state management have made it a compelling option among others.</p>"
 NodeJS,Adopt,languages-and-frameworks,TRUE,"<p>We use NodeJS for SPA, API gateway and websocket applications.</p>"
 Typescript,Adopt,languages-and-frameworks,TRUE,"<p>We use Typescript on newer applications that are closer to the end-user.</p>"
 Next.js,Adopt,languages-and-frameworks,TRUE,<p>We are rebuilding our main platform using Next.js as the framework.</p>
 NestJS,Adopt,languages-and-frameworks,TRUE,<p>We use NestJS for building the API gateway for microservices.</p>
+Celery,Mainstream,languages-and-frameworks,FALSE,"<p><a href=""http://mypy-lang.org/"" target=”_blank”>mypy</a> Mypy is an optional static type checker for Python that aims to combine the benefits of dynamic (or ""duck"") typing and static typing.</phttp://mypy-lang"
 Sylius,Trial,languages-and-frameworks,FALSE,<p>Headless E-commerce used to spin up quickly a traditional e-commmerce website.</p>
 Angular,Hold,languages-and-frameworks,FALSE,<p>Use React instead even though we have some traces of Angular in some applications.</p>
 Laravel,Hold,languages-and-frameworks,FALSE,<p>With most of our (new) PHP applications written in Symfony there is no need to look elsewhere for the moment.</p>
