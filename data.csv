@@ -1,5 +1,5 @@
 name,ring,quadrant,isNew,description
-Scrum,Mainstream,Techniques,FALSE,<p>The default way of working in Emesa is Scrum.</p>
+Scrum,Mainstream,Techniques,FALSE,"<p>The default way of working in Emesa is Scrum.</p>"
 Microservices,Adopt,Techniques,FALSE,"<p>Build medium-sized specialised services around common functionality or domain context.</p>"
 Infrastructure as code,Adopt,Techniques,FALSE,"<p>Although <strong>infrastructure as code</strong> is a relatively old technique (we’ve featured it in the Radar in 2011), it has become vitally important in the modern cloud era where the act of setting up infrastructure has become the passing of configuration instructions to a cloud platform. When we say ""as code"" we mean that all the good practices we've learned in the software world should be applied to infrastructure. Using source control, adhering to the <a href=""https://en.wikipedia.org/wiki/Don%27t_repeat_yourself"">DRY principle</a>, modularization, maintainability, and using automated testing and deployment are all critical practices. Those of us with a deep software and infrastructure background need to empathize with and support colleagues who do not. Saying ""treat infrastructure like code"" isn't enough; we need to ensure the hard-won learnings from the software world are also applied consistently throughout the infrastructure realm.</p>"
 Hexagonal Architecture,Adopt,Techniques,FALSE,"<p>Design pattern as a flavour of layered or onion architecture. Used to decouple framework from application code and isolate better Domain, Application and Infrastructure layer. Also a good way to enforce a more DDD approach to projects. Hexagonal Architecture is also known as Poorts & Adapters. Used in FFS.</p>"
@@ -10,72 +10,72 @@ Continuous delivery for machine learning (CD4ML),Trial,Techniques,FALSE,"<p>Appl
 Event Storming,Trial,Techniques,FALSE,"<p>Event Storming is a method of modeling business processes using domain events. With complex business processes, people usually know their part of the process very well. Having people from different departments in one room, allows (and requires!) a conversation. Knowledge silos get opened up. All learnings can be directly visualized. We tried this method a couple of times with different sized scopes. We believe it can be of value and has potential.</p>"
 Micro frontends,Assess,Techniques,FALSE,"<p>We've seen significant benefits from introducing <a href=""https://martinfowler.com/articles/microservices.html"" target=""_blank"">microservices</a>, which have allowed teams to scale the delivery of independently deployed and maintained services. Unfortunately, we've also seen many teams create a front-end monolith — a large, entangled browser application that sits on top of the back-end services — largely neutralizing the benefits of microservices. <strong>Micro frontends</strong> have continued to gain in popularity since they were first introduced. We've seen many teams adopt some form of this architecture as a way to manage the complexity of multiple developers and teams contributing to the same user experience. In June of last year, one of the originators of this technique published an <a href=""https://martinfowler.com/articles/micro-frontends.html"" target=""_blank"">introductory article</a> that serves as a reference for micro frontends. It shows how this style can be implemented using various web programming mechanisms and builds out an example application using <a href=""/radar/languages-and-frameworks/react-js"" target=""_blank"">React.js</a>. We're confident this style will grow in popularity as larger organizations try to decompose UI development across multiple teams.</p>"
 Development Lanes (Strategic/Tech/Fast),Hold,Techniques,FALSE,"<p>Because a team is constantly pulled in this 3 directions: strategic initiatives (business roadmap), technical backlog (constantly fixing technical debt) and operational work an approach would be to clearly separate this work inside a team to avoid distractions in each lane and enable scaling-up/down according to work load. More details can be found <a href=""https://medium.com/teads-engineering/growing-a-feature-team-using-lanes-2e50d5521006"" target=""_blank"">here</a></p><p>It was trialed in Hammer Backend team back in 2019 with decent results and mixed feelings towards it. Was put on hold by the team and never revived again due to capacity issues which didn't meet requirements of a lane: at least 2 devs in 1 lane.</p>"
-MariaDB,Mainstream,Platforms-and-Infra,FALSE,<p>Relational database used primarily in PHP projects.</p>
-RabbitMQ,Mainstream,Platforms-and-Infra,FALSE,<p>RabbitMQ is one of the most popular open source message brokers. Used for queues on prem.</p>
+MariaDB,Mainstream,Platforms-and-Infra,FALSE,"<p>Relational database used primarily in PHP projects.</p>"
+RabbitMQ,Mainstream,Platforms-and-Infra,FALSE,"<p>RabbitMQ is one of the most popular open source message brokers. Used for queues on prem.</p>"
 Kafka,Mainstream,Platforms-and-Infra,FALSE,"<p>Apache Kafka is an open-source distributed event streaming platform used by thousands of companies for high-performance data pipelines, streaming analytics, data integration, and mission-critical applications. Kafka is THE message bus to be used inside Emesa for async communication between micro-services.</p>"
 AWS,Mainstream,Platforms-and-Infra,FALSE,"<p>We use AWS as the default infrastructure hosting for new projects</p>"
 Apache Airflow,Adopt,Platforms-and-Infra,FALSE,"<p><strong>Apache Airflow</strong> is a platform created by the community to programmatically author, schedule and monitor workflows. Use Airflow for On-Prem setups.</p>"
 Docker ,Adopt,Platforms-and-Infra,FALSE,"<p>Docker is currently the most-used solution for creating and managing container-based infrastructures and deployments. Backed by services such as Kubernetes, we can deploy Docker containers on a flexible infrastructure and enable our developers to test their software more easily in different environments.</p>"
 Kubernetes,Adopt,Platforms-and-Infra,FALSE,"<p>Kubernetes, also known as K8s, is an open-source system for automating deployment, scaling, and management of containerized applications. We use it mostly for newly build micro-services deployed in the cloud.</p>"
-PostgreSQL,Mainstream,Platforms-and-Infra,FALSE,<p>Relational database used primarily in data warehousing & ERP/Odoo project.</p>
+PostgreSQL,Mainstream,Platforms-and-Infra,FALSE,"<p>Relational database used primarily in data warehousing & ERP/Odoo project.</p>"
 Redis,Adopt,Platforms-and-Infra,FALSE,"<p>Redis is an open source (BSD licensed), in-memory data structure store, used as a database, cache, and message broker. In Emesa we use it mainly as a  in-memory data structure store.</p>"
-AWS DynamoDB,Mainstream,Platforms-and-Infra,FALSE,<p>Amazon DynamoDB is a key-value and document database. Used in PG project.</p>
+AWS DynamoDB,Mainstream,Platforms-and-Infra,FALSE,"<p>Amazon DynamoDB is a key-value and document database. Used in PG project.</p>"
 AWS Elasticache Redis,Adopt,Platforms-and-Infra,FALSE,"<p>Amazon Elasticache Redis is a in-memory data structure store, used as a database, cache and message broker.</p>"
-AWS S3,Adopt,Platforms-and-Infra,FALSE,<p>AWS S3 is a scalable object storage provided by AWS</p>
+AWS S3,Adopt,Platforms-and-Infra,FALSE,"<p>AWS S3 is a scalable object storage provided by AWS</p>"
 Prometheus,Adopt,Platforms-and-Infra,FALSE,"<p>An open-source monitoring system with a dimensional data model, flexible query language, efficient time series database and modern alerting approach.</p>"
-AWS SQS,Adopt,Platforms-and-Infra,FALSE,<p>For queues in the cloud.</p>
+AWS SQS,Adopt,Platforms-and-Infra,FALSE,"<p>For queues in the cloud.</p>"
 AWS Lambda,Assess,Platforms-and-infra,TRUE,"<p>AWS Lambda is a serverless compute service that lets you run code without provisioning or managing servers, creating workload-aware cluster scaling logic, maintaining event integrations, or managing runtimes.</p>"
 AWS Kinesis,Assess,Platforms-and-infra,TRUE,"<p>Amazon Kinesis makes it easy to collect, process, and analyze real-time, streaming data so you can get timely insights and react quickly to new information.</p>"
 AWS SageMaker,Adopt,Platforms-and-infra,TRUE,"<p>Amazon SageMaker helps data scientists and developers to prepare, build, train, and deploy high-quality machine learning (ML) models quickly by bringing together a broad set of capabilities purpose-built for ML.</p>"
 Uwsgi,Mainstream,Platforms-and-infra,FALSE,"<p><a href=""http://mypy-lang.org/"" target=""_blank"">The uWSGI project</a> aims at developing a full stack for building hosting services.</p>"
 RedisGraph,Assess,Platforms-and-infra,TRUE,"<p><a href=""https://redislabs.com/modules/redis-graph/"" target=""_blank"">RedisGraph</a> is based on a unique approach and architecture that translates Cypher queries to matrix operations executed over a GraphBLAS engine. This new design allows use cases like social graph operation, fraud detection, and real-time recommendation to be executed 10x – 600x faster than any other graph database.</p>"
-Minikube,Trial,Platforms-and-Infra,FALSE,<p>Minikube is a tool that lets you run Kubernetes locally.</p>
-LXD,Hold,Platforms-and-Infra,FALSE,<p>LXD is a system container manager. It offers a user experience similar to virtual machines but using Linux containers instead. We use LXD for On Prem applications (including dev & test envs). Due to move to cloud we decided to stop using LXD and focus on Docker instead.</p>
-Solr,Hold,Platforms-and-Infra,FALSE,<p>Solr is an indexing platform used by Hammer and AvdD. On Hammer it's used to index lots but it's deprecated and being replaced by Elastic Search. On AvdD it's used to index products.</p>
-Elastic Search,Adopt,Platforms-and-Infra,FALSE,<p>Elastic Search is an indexing platform used by Hammer to index lots.</p>
-New Relic,Adopt,Platforms-and-Infra,FALSE,<p>Monitoring tool for web and mobile applications.</p>
-Pingdom,Adopt,Platforms-and-Infra,FALSE,<p>Application monitoring tool.</p>
+Minikube,Trial,Platforms-and-Infra,FALSE,"<p>Minikube is a tool that lets you run Kubernetes locally.</p>"
+LXD,Hold,Platforms-and-Infra,FALSE,"<p>LXD is a system container manager. It offers a user experience similar to virtual machines but using Linux containers instead. We use LXD for On Prem applications (including dev & test envs). Due to move to cloud we decided to stop using LXD and focus on Docker instead.</p>"
+Solr,Hold,Platforms-and-Infra,FALSE,"<p>Solr is an indexing platform used by Hammer and AvdD. On Hammer it's used to index lots but it's deprecated and being replaced by Elastic Search. On AvdD it's used to index products.</p>"
+Elastic Search,Adopt,Platforms-and-Infra,FALSE,"<p>Elastic Search is an indexing platform used by Hammer to index lots.</p>"
+New Relic,Adopt,Platforms-and-Infra,FALSE,"<p>Monitoring tool for web and mobile applications.</p>"
+Pingdom,Adopt,Platforms-and-Infra,FALSE,"<p>Application monitoring tool.</p>"
 Sentry,Mainstream,Tools,FALSE,"<p>Sentry is an open-source full-stack error tracking system which supports a wide range of server, browser, desktop and native mobile languages and frameworks </p>"
 Jenkins,Mainstream,Tools,FALSE,"<p>We use Jenkins for CI/CD and automating some jobs.</p>"
 Terraform,Mainstream,Tools,FALSE,"<p>We have been using terraform to manage our cloud infrastructure and our on-prem kubernetes. We have been moving towards using terragrunt on top of it, but terraform is used underneath anyway.</p>"
 Helm,Adopt,Tools,FALSE,"<p>Helm is our prefered way of describing how applications run on kubernetes. Both for our own and for third party applications.</p>"
 Grafana,Adopt,Tools,FALSE,"<p>Grafana is a multi-platform open source analytics and interactive visualization web application. It provides charts, graphs, and alerts for the web when connected to supported data sources.</p>"
-Keycloak,Adopt,Tools,FALSE,<p>Open Source Identity and Access Management. Used in Emesa as SSO for internal applications.</p>
+Keycloak,Adopt,Tools,FALSE,"<p>Open Source Identity and Access Management. Used in Emesa as SSO for internal applications.</p>"
 SonarQube,Adopt,Tools,FALSE,"<p>We use SonarQube to get insight into code quality like: code coverage, bugs, complexities, etc.</p>"
-Matomo (ex Piwik),Adopt,Tools,FALSE,<p>Analytics for internal applications to help us track and analyze behaviour of our internal users.</p>
+Matomo (ex Piwik),Adopt,Tools,FALSE,"<p>Analytics for internal applications to help us track and analyze behaviour of our internal users.</p>"
 Terragrunt,Trial,Tools,FALSE,"<p><strong><a href=""https://terragrunt.gruntwork.io"" target=""_blank"">Terragrunt</a></strong> Terragrunt is a thin wrapper that provides extra tools for keeping your configurations DRY, working with multiple Terraform modules, and managing remote state.</p>"
 Debezium,Adopt,Tools,FALSE,"<p><strong>Debezium</strong> is a tool that allows real time streaming of database changes to our Kafka cluster. For the ELT processes using Debezium we achieve near-realtime updates for our Data Warehouse, allowing applications and processes that rely on this data to react very fast to changing conditions.</p>"
-Gurobi,Trial,Tools,FALSE,<p>Gurobi is a Mathematical Optimization Solver and we use to resolve models in context of marketing automation.</p>
-Zapier,Trial,Tools,FALSE,<p>Connects your apps and automates workflows. Used in context of marketing automation.</p>
+Gurobi,Trial,Tools,FALSE,"<p>Gurobi is a Mathematical Optimization Solver and we use to resolve models in context of marketing automation.</p>"
+Zapier,Trial,Tools,FALSE,"<p>Connects your apps and automates workflows. Used in context of marketing automation.</p>"
 Apache Spark,Trial,Tools,FALSE,"<p><strong><a href=""https://spark.apache.org"" target=""_blank"">Apache Spark</a></strong> is a unified analytics engine for large-scale data processing</p>"
 KaDeck,Trial,Tools,FALSE,"<p>Kafka Client for the clusters used by applications.</p>"
 Lenses,Hold,Tools,FALSE,"<p>Lenses enables you to deliver streaming applications faster and to manage your data flows natively over Apache Kafka. Lenses enriches your Kafka eco-system with a rich user interface, vital enterprise capabilities which enable engineering teams to query real-time data, create and monitor Kafka streaming topologies and integrate with other systems.</p>"
 ELK,Adopt,Tools,TRUE,"<p>We are now using the ELK stack to enable advanced searching on our application logs</p>"
-Zabbix,Deprecated,Tools,FALSE,<p>Main monitoring and alerting tool for our on-prem infrastructure</p>
-Memcached,Deprecated,Tools,FALSE,<p>Key-value store used for legacy applications. For new ones Redis should be used instead.</p>
-Talend,Deprecated,Tools,FALSE,<p>Talend was used for some ETL processes but now we should move to Airflow instead.</p>
+Zabbix,Deprecated,Tools,FALSE,"<p>Main monitoring and alerting tool for our on-prem infrastructure</p>"
+Memcached,Deprecated,Tools,FALSE,"<p>Key-value store used for legacy applications. For new ones Redis should be used instead.</p>"
+Talend,Deprecated,Tools,FALSE,"<p>Talend was used for some ETL processes but now we should move to Airflow instead.</p>"
 Puppet,Hold,Tools,FALSE,"<p>Puppet is used to provision on-prem servers. Since we are moving to cloud (AWS), Puppet tends to be deprecated, But because we still maintain on-prem infra and we still don't know if everything will be moved to cloud, it's on hold.</p>"
-Ansible,Adopt,Tools,FALSE,<p>Automation tool used to build some applications.</p>
+Ansible,Adopt,Tools,FALSE,"<p>Automation tool used to build some applications.</p>"
 Sphinx,Adopt,Tools,FALSE,"<p><a href=""https://www.sphinx-doc.org"" target=""_blank"">Sphinx</a> is a tool that makes it easy to create intelligent and beautiful documentation, written by Georg Brandl and licensed under the BSD license.</p>"
 PHP,Mainstream,languages-and-frameworks,FALSE,"<p>We use PHP for most web applications.</p>"
 Python,Mainstream,languages-and-frameworks,FALSE,"<p>We use Python for more data oriented applications.</p>"
 Robot Framework,Mainstream,languages-and-frameworks,FALSE,"<p><a href=""https://robotframework.org"" target=""_blank"">Robot Framework</a> is a generic open source automation framework. It can be used for test automation and robotic process automation (RPA).</p>"
 Appium,Mainstream,languages-and-frameworks,FALSE,"<p><a href=""https://appium.io/"" target=""_blank"">Appium</a> is an open source test automation framework for use with native, hybrid and mobile web apps.</p>"
-Django,Mainstream,languages-and-frameworks,FALSE,<p>We use Django as our default Python framework.</p>
+Django,Mainstream,languages-and-frameworks,FALSE,"<p>We use Django as our default Python framework.</p>"
 Django-channels,Adopt,languages-and-frameworks,FALSE,"<p><a href=""https://channels.readthedocs.io/en/stable/"" target=""_blank"">Channels</a> is a project that takes Django and extends its abilities beyond HTTP - to handle WebSockets, chat protocols, IoT protocols, and more. It’s built on a Python specification called ASGI.</p>"
-Symfony,Mainstream,languages-and-frameworks,FALSE,<p>We use Symfony as our default PHP framework.</p>
-React,Adopt,languages-and-frameworks,FALSE,<p>We use React for SPA.</p>
-Redux,Adopt,languages-and-frameworks,TRUE,<p>We use Redux for state management.</p>
-Flask,Adopt,languages-and-frameworks,FALSE,<p><a href=""https://palletsprojects.com/p/flask/"" target=""_blank"">Flask</a> is a WSGI web app microframework developed by Armin Ronacher with many cool features like url routing and template engine.</p>
+Symfony,Mainstream,languages-and-frameworks,FALSE,"<p>We use Symfony as our default PHP framework.</p>"
+React,Adopt,languages-and-frameworks,FALSE,"<p>We use React for SPA.</p>"
+Redux,Adopt,languages-and-frameworks,TRUE,"<p>We use Redux for state management.</p>"
+Flask,Adopt,languages-and-frameworks,FALSE,"<p><a href=""https://palletsprojects.com/p/flask/"" target=""_blank"">Flask</a> is a WSGI web app microframework developed by Armin Ronacher with many cool features like url routing and template engine.</p>"
 Vue.js,Adopt,languages-and-frameworks,FALSE,"<p><strong><a href=""https://vuejs.org/"" target=""_blank"">Vue.js</a></strong> has become one of the successfully applied, loved and trusted frontend JavaScript frameworks among our community. Although there are other, well-adopted alternatives, such as <a href=""/radar/languages-and-frameworks/react-js"" target=""_blank"">React.js</a>, the simplicity of Vue.js in API design, its clear segregation of directives and components (one file per component idiom) and its simpler state management have made it a compelling option among others.</p>"
 NodeJS,Adopt,languages-and-frameworks,TRUE,"<p>We use NodeJS for SPA, API gateway and websocket applications.</p>"
 Typescript,Adopt,languages-and-frameworks,TRUE,"<p>We use Typescript on newer applications that are closer to the end-user.</p>"
-Next.js,Adopt,languages-and-frameworks,TRUE,<p>We are rebuilding our main platform using Next.js as the framework.</p>
-NestJS,Adopt,languages-and-frameworks,TRUE,<p>We use NestJS for building the API gateway for microservices.</p>
+Next.js,Adopt,languages-and-frameworks,TRUE,"<p>We are rebuilding our main platform using Next.js as the framework.</p>"
+NestJS,Adopt,languages-and-frameworks,TRUE,"<p>We use NestJS for building the API gateway for microservices.</p>"
 Celery,Mainstream,languages-and-frameworks,FALSE,"<p><a href=""http://mypy-lang.org/"" target=""_blank"">mypy</a> Mypy is an optional static type checker for Python that aims to combine the benefits of dynamic (or ""duck"") typing and static typing.</phttp://mypy-lang"
-Sylius,Trial,languages-and-frameworks,FALSE,<p>Headless E-commerce used to spin up quickly a traditional e-commmerce website.</p>
-Angular,Hold,languages-and-frameworks,FALSE,<p>Use React instead even though we have some traces of Angular in some applications.</p>
-Laravel,Hold,languages-and-frameworks,FALSE,<p>With most of our (new) PHP applications written in Symfony there is no need to look elsewhere for the moment.</p>
-Flutter,Hold,languages-and-frameworks,FALSE,<p>We don't consider Flutter as mature enough (yet) to be used for our main auctioning apps. However it is an interesting framework that might be useful at some point for certain scenarios.</p>
-Zend Framework 1,Deprecated,languages-and-frameworks,FALSE,<p>This should not be used in building new applications even though is still a big part of our main monolith.</p>
-Cordova,Deprecated,languages-and-frameworks,FALSE,<p>We are moving to a fully native approach for mobile apps so Cordova is deprecated since it's slowly dying.</p>
+Sylius,Trial,languages-and-frameworks,FALSE,"<p>Headless E-commerce used to spin up quickly a traditional e-commmerce website.</p>"
+Angular,Hold,languages-and-frameworks,FALSE,"<p>Use React instead even though we have some traces of Angular in some applications.</p>"
+Laravel,Hold,languages-and-frameworks,FALSE,"<p>With most of our (new) PHP applications written in Symfony there is no need to look elsewhere for the moment.</p>"
+Flutter,Hold,languages-and-frameworks,FALSE,"<p>We don't consider Flutter as mature enough (yet) to be used for our main auctioning apps. However it is an interesting framework that might be useful at some point for certain scenarios.</p>"
+Zend Framework 1,Deprecated,languages-and-frameworks,FALSE,"<p>This should not be used in building new applications even though is still a big part of our main monolith.</p>"
+Cordova,Deprecated,languages-and-frameworks,FALSE,"<p>We are moving to a fully native approach for mobile apps so Cordova is deprecated since it's slowly dying.</p>"
