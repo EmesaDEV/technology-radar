@@ -82,7 +82,7 @@ k9s,Trial,Tools,TRUE,"<p>If you're looking for a K8s client that works great in 
 Lens,Trial,Tools,TRUE,"<p>If you're looking for a k8s IDE that looks more like, ehm, an IDE, this is it.</p>"
 Pact,Trial,Tools,TRUE,"<p></p>"
 Local Stack,Trial,Tools,TRUE,"<p>While we start using more AWS componenents in our apps (like S3) developing and testing becomes also a bit more tricky. That's why using Local Stack can prove quite helpful when you want to mock away such services. We used it succesfully in some projects so ask aroud if you need help with it.</p>"
-Pydantic,Trial,Tools,TRUE,"<p></p>"
+Pydantic,Trial,Tools,TRUE,"<p>pydantic enforces type hints at runtime, and provides user-friendly errors when data is invalid. Currently used in a couple of our python projects</p>"
 New Relic replacement,Assess,Tools,TRUE,"<p>Since the introduction of New Relic quite some time has passed. Without a doubt New Relic has proven a great APM tool that helped us tremendously in the past, but with the introduction of other tools in our landscape like Elastic or Sentry we want to investigate if we can use APM functionality of this tools as alternative to New Relic. For us this will mean simpler application landscape to maintain but also lower costs!</p>"
 PHP,Mainstream,Languages-and-Frameworks,FALSE,"<p>We use PHP for most web applications.</p>"
 Python,Mainstream,Languages-and-Frameworks,FALSE,"<p>We use Python for more data oriented applications.</p>"
