@@ -106,7 +106,7 @@ Flutter,Hold,Languages-and-Frameworks,FALSE,"<p>We don't consider Flutter as mat
 Zend Framework 1,Deprecated,Languages-and-Frameworks,FALSE,"<p>This should not be used in building new applications even though is still a big part of our main monolith.</p>"
 Cordova,Deprecated,Languages-and-Frameworks,FALSE,"<p>We are moving to a fully native approach for mobile apps so Cordova is deprecated since it's slowly dying.</p>"
 Jetpack compose,Trial,Tools,TRUE,"<p></p>"
-GraphQL,Assess,Tools,TRUE,"<p></p>"
+GraphQL,Assess,Tools,TRUE,"<p>GraphQL allows APIs to be built in a more generic way and allows the applications to query the data they want instead of relying on static endpoints that might return more or less data than what an application needs.</p>"
 Firebase - Crashlytics,Assess,Tools,TRUE,"<p></p>"
 Groupie,Trial,Tools,TRUE,"<p></p>"
 Redux,Trial,TRUE,"<p></p>"
