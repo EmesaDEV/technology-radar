@@ -496,10 +496,9 @@ const Radar = function (size, radar) {
       .append('div')
       .attr('class', 'footer-content')
       .append('p')
-      .html('Do you like what you see? If you want to help us with the technology we already use ' +
-          'or help use discover new ones: <a href="https://www.werkenbijemesa.nl/?lang=en&tags%5B%5D=department%2CProduct%20%26%20Technology&">join us</a>!' +
-          '<br><br><a href="#" onclick="window.print.bind(window)">Print this radar</a>')
-  }
+      .html('Do you like what you see? Interested contributing to our radar and making an impact? We\'re always looking for people like you.' + 
+            'Check our careers page <a href="https://www.werkenbijemesa.nl/?lang=en&tags%5B%5D=department%2CProduct%20%26%20Technology&">here</a> and apply!')
+    }
 
   function mouseoverQuadrant (order) {
     d3.select('.quadrant-group-' + order).style('opacity', 1)
